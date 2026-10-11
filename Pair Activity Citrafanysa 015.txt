@@ -1,0 +1,1711 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> w:dget search powershell
+w:dget : The term 'w:dget' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ w:dget search powershell
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (w:dget:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> widget search powershell
+widget : The term 'widget' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ widget search powershell
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (widget:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> gpg --help
+gpg (GnuPG) 2.5.24
+libgcrypt 1.12.4
+Copyright (C) 2026 g10 Code GmbH
+License GNU GPL-3.0-or-later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: C:\Users\Citra Fanysa\AppData\Roaming\gnupg
+Supported algorithms:
+Pubkey: RSA, Kyber, ELG, DSA, ECDH, ECDSA, EDDSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
+        CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+
+Syntax: gpg [options] [files]
+Sign, check, encrypt or decrypt
+Default operation depends on the input data
+
+Commands:
+
+ -s, --sign                         make a signature
+     --clear-sign                   make a clear text signature
+ -b, --detach-sign                  make a detached signature
+ -e, --encrypt                      encrypt data
+ -c, --symmetric                    encryption only with symmetric cipher
+ -d, --decrypt                      decrypt data (default)
+     --verify                       verify a signature
+ -k, --list-keys                    list keys
+     --list-signatures              list keys and signatures
+     --check-signatures             list and check key signatures
+     --fingerprint                  list keys and fingerprints
+ -K, --list-secret-keys             list secret keys
+     --generate-key                 generate a new key pair
+     --quick-generate-key           quickly generate a new key pair
+     --quick-add-uid                quickly add a new user-id
+     --quick-revoke-uid             quickly revoke a user-id
+     --quick-set-expire             quickly set a new expiration date
+     --full-generate-key            full featured key pair generation
+     --generate-revocation          generate a revocation certificate
+     --delete-keys                  remove keys from the public keyring
+     --delete-secret-keys           remove keys from the secret keyring
+     --quick-sign-key               quickly sign a key
+     --quick-lsign-key              quickly sign a key locally
+     --quick-tsign-key              quickly sign a key with a trust signature
+     --quick-revoke-sig             quickly revoke a key signature
+     --sign-key                     sign a key
+     --lsign-key                    sign a key locally
+     --edit-key                     sign or edit a key
+     --change-passphrase            change a passphrase
+     --export                       export keys
+     --send-keys                    export keys to a keyserver
+     --receive-keys                 import keys from a keyserver
+     --search-keys                  search for keys on a keyserver
+     --refresh-keys                 update all keys from a keyserver
+     --import                       import/merge keys
+     --card-status                  print the card status
+     --edit-card                    change data on a card
+     --change-pin                   change a card's PIN
+     --update-trustdb               update the trust database
+     --print-md                     print message digests
+     --server                       run in server mode
+     --tofu-policy VALUE            set the TOFU policy for a key
+
+Options controlling the diagnostic output:
+ -v, --verbose                      verbose
+ -q, --quiet                        be somewhat more quiet
+     --options FILE                 read options from FILE
+     --log-file FILE                write server mode logs to FILE
+
+Options controlling the configuration:
+     --default-key NAME             use NAME as default secret key
+     --encrypt-to NAME              encrypt to user ID NAME as well
+     --group SPEC                   set up email aliases
+     --openpgp                      use strict OpenPGP behavior
+ -n, --dry-run                      do not make any changes
+ -i, --interactive                  prompt before overwriting
+
+Options controlling the output:
+ -a, --armor                        create ascii armored output
+ -o, --output FILE                  write output to FILE
+ -z N                               set compress level to N (0 disables)
+
+Options controlling key import and export:
+     --auto-key-locate MECHANISMS   use MECHANISMS to locate keys by mail address
+     --auto-key-import              import missing key from a signature
+     --include-key-block            include the public key in signatures
+     --disable-dirmngr              disable all access to the dirmngr
+
+Options to specify keys:
+ -r, --recipient USER-ID            encrypt for USER-ID
+ -u, --local-user USER-ID           use USER-ID to sign or decrypt
+
+(See the man page for a complete listing of all commands and options)
+
+Examples:
+
+ -se -r Bob [file]          sign and encrypt for user Bob
+ --clear-sign [file]        make a clear text signature
+ --detach-sign [file]       make a detached signature
+ --list-keys [names]        show keys
+ --fingerprint [names]      show fingerprints
+
+Please report bugs to <https://bugs.gnupg.org>.
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> gpg --generate-key
+gpg (GnuPG) 2.5.24; Copyright (C) 2026 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Citra Fanysa
+Email address: 25031554015@mhs.unesa.ac.id
+You selected this USER-ID:
+    "Citra Fanysa <25031554015@mhs.unesa.ac.id>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: directory 'C:\\Users\\Citra Fanysa\\AppData\\Roaming\\gnupg\\openpgp-revocs.d' created
+gpg: revocation certificate stored as 'C:\\Users\\Citra Fanysa\\AppData\\Roaming\\gnupg\\openpgp-revocs.d\\7A4C836AF8719F48F3EF4F5A795C52B2779D578E.rev'
+public and secret key created and signed.
+
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid                      Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> gpg -k
+[keyboxd]
+---------
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid           [ultimate] Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
+Rename-Item : Cannot rename because item at 'File Citra Fanysa.pdf' does not exist.
+At line:1 char:1
++ Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.RenameItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> dir *.pdf
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
+Rename-Item : Cannot rename because item at 'File Citra Fanysa.pdf' does not
+exist.
+At line:1 char:1
++ Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOpera
+   tionException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.Rena
+   meItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> dir File*
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> ^C
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
+Rename-Item : Cannot rename because item at 'File Citra Fanysa.pdf' does not
+exist.
+At line:1 char:1
++ Rename-Item "File Citra Fanysa.pdf" "File_Citra_Fanysa.pdf"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOpera
+   tionException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.Rena
+   meItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> Get-ChildItem -Path $HOME -Recurse -Include *.pdf -ErrorAction SilentlyContinue | Select-Object FullName, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 15
+
+FullName
+--------
+C:\Users\Citra Fanysa\OneDrive\Documents\File_Tabrizzi_Aqlia.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm\File_Tabrizzi_Aqlia.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm\File Citra Fanysa.pdf
+C:\Users\Citra Fanysa\Downloads\Citra fanysa INT 2025.pdf
+C:\Users\Citra Fanysa\Downloads\LKM 1_2026.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\TUGAS KAMPUS\CITRFANYSA 015_Block Symm...
+C:\Users\Citra Fanysa\Downloads\KID\KID-LKM0.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\DATA WRANGLING\LAPORAN_LANJUTAN_INSTAG...
+C:\Users\Citra Fanysa\Downloads\contentsample_dataFile Data Wrangling tps sampa...
+C:\Users\Citra Fanysa\Downloads\5_Data integration (2).pdf
+C:\Users\Citra Fanysa\Downloads\Rev 3 dan 4. Konvolusi dan Respons Impuls.pdf
+C:\Users\Citra Fanysa\Downloads\5_Data integration (1).pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\KID NEW\Gpg4win\share\doc\gpgol\gpgol.pdf
+C:\Users\Citra Fanysa\Downloads\5_Data integration.pdf
+C:\Users\Citra Fanysa\Downloads\MATERI PEMTEKS.pdf
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop>
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> dir "$HOME\Downloads\*.pdf"
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Desktop> cd "$HOME\Downloads"
+PS C:\Users\Citra Fanysa\Downloads> Rename-Item -LiteralPath "nama file asli.pdf" -NewName "File_Citra_Fanysa.pdf"
+Rename-Item : Cannot rename because item at 'nama file asli.pdf' does not exist.
+At line:1 char:1
++ Rename-Item -LiteralPath "nama file asli.pdf" -NewName "File_Citra_Fa ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOpera
+   tionException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.Rena
+   meItemCommand
+
+PS C:\Users\Citra Fanysa\Downloads> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> Rename-Item -LiteralPath "doc.pdf" -NewName "File_Citra_Fanysa.pdf"
+Rename-Item : Cannot rename because item at 'doc.pdf' does not exist.
+At line:1 char:1
++ Rename-Item -LiteralPath "doc.pdf" -NewName "File_Citra_Fanysa.pdf"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOpera
+   tionException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.Rena
+   meItemCommand
+
+PS C:\Users\Citra Fanysa\Downloads> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> cd "$HOME\Downloads"
+PS C:\Users\Citra Fanysa\Downloads> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> gpg -k
+[keyboxd]
+---------
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid           [ultimate] Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+PS C:\Users\Citra Fanysa\Downloads> gpg --output pub-25031554015.gpg --armor --export EMAILMU
+gpg: WARNING: nothing exported
+PS C:\Users\Citra Fanysa\Downloads> gpg --yes --output pub-25031554015.gpg --armor --export 25031554015@mhs.unesa.ac.id
+PS C:\Users\Citra Fanysa\Downloads> Get-Content pub-25031554015.gpg -TotalCount 3
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEastfFBYJKwYBBAHaRw8BAQdAYpae6mqq1UxIZyKRMJdRgIiSm6+PHB0E94Nk
+PS C:\Users\Citra Fanysa\Downloads> dir pub-25031554015.gpg
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/11/2026   5:29 PM            765 pub-25031554015.gpg
+
+
+PS C:\Users\Citra Fanysa\Downloads> dir File_Citra_Fanysa.pdf
+dir : Cannot find path 'C:\Users\Citra Fanysa\Downloads\File_Citra_Fanysa.pdf'
+because it does not exist.
+At line:1 char:1
++ dir File_Citra_Fanysa.pdf
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...itra_Fanysa.pdf:
+   String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChild
+   ItemCommand
+
+PS C:\Users\Citra Fanysa\Downloads> Get-ChildItem -Path $HOME -Recurse -Filter "File_Citra*" -ErrorAction SilentlyContinue | Select-Object FullName
+PS C:\Users\Citra Fanysa\Downloads> Get-ChildItem -Path $HOME -Recurse -Filter "*Fanysa*.pdf" -ErrorAction SilentlyContinue | Select-Object FullName
+
+FullName
+--------
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Android\media\com.whatsap...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\AKTA KELAHIRAN C...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\BERKAS CITRA FAN...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\BIODATA MABA CIT...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA - B...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA - B...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA - F...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA - M...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA ukm...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA Web...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA Wel...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA _SN...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSA.pdf
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRA FANYSAA.pdf
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Citra fanysa_250...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CITRAFANYSA_PPF2...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CV CITRA FANYSA_...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CV RESUME CITRAF...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\CV+RESUME+CITRAF...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\IJAZAH CITRA FAN...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\KARTU KELUARGA C...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\KARTU PELAJAR CI...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\KARTU PELAJAR CI...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\KTA UKIM CITRA F...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Sertifikat CITRA...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Sertifikat CITRA...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Sertifikat CITRA...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\SKL CITRA FANYSA...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\SURAT LAMARAN CI...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\SURAT LAMARAN CI...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\TUGAS ESSAY 2025...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\Citra fany...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\Citra fany...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\PORTOFOLIO...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\PORTOFOLIO...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\PORTOFOLIO...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\Download\Canva\RAPORT CIT...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\sertifikat\sertifikat AJ ...
+C:\Users\Citra Fanysa\CrossDevice\Citra phone\storage\sertifikat\sertifikat AJ ...
+C:\Users\Citra Fanysa\Downloads\015_Citra fanysa_IMK.pdf
+C:\Users\Citra Fanysa\Downloads\015_Citra fanysa_IMKFINAL.pdf
+C:\Users\Citra Fanysa\Downloads\015_CITRA FANYSA_KALKULUS.pdf
+C:\Users\Citra Fanysa\Downloads\015_WEEK 11_CITRA FANYSA.pdf
+C:\Users\Citra Fanysa\Downloads\BASIS DATA_CITRA FANYSA 015_MAIN ACTIVITY.pdf
+C:\Users\Citra Fanysa\Downloads\CETAK KHS CITRA FANYSA.pdf
+C:\Users\Citra Fanysa\Downloads\Citra fanysa INT 2025.pdf
+C:\Users\Citra Fanysa\Downloads\CITRA FANYSA_015_IMK.pdf
+C:\Users\Citra Fanysa\Downloads\SAUDARI CITRA FANYSA.pdf
+C:\Users\Citra Fanysa\Downloads\Surat_Keterangan_Lab_Citra_Fanysa.pdf
+C:\Users\Citra Fanysa\Downloads\TUGAS DATA WRANGLING TABRIZZI AQLIA dan CITRA F...
+C:\Users\Citra Fanysa\OneDrive\Documents\CITRA FANYSA 25031554015.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\DATA WRANGLING\TUGAS DATA WRANGLING TA...
+C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm\File Citra Fanysa.pdf
+C:\Users\Citra Fanysa\OneDrive\Documents\TUGAS KAMPUS\CITRFANYSA 015_Block Symm...
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\425198110 KARTU CAMABA CITRA FA...
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\AKTA KELAHIRAN CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\CITRA FANYSA _SNBP.pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\IJAZAH CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\KARTU KELUARGA CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\KARTU PELAJAR CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\KARTU PELAJAR CITRA FANYSA 2.pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\KHS CITRA FANYSA.pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\KTP CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\PADUAN DAFTAR ULANG citra fanys...
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\SKL CITRA FANYSA .pdf
+C:\Users\Citra Fanysa\OneDrive\Pictures\BIODATA\SURAT SKA CITRA FANYSAA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> Copy-Item -LiteralPath "LOKASI_LENGKAP_DARI_HASIL_PENCARIAN" -Destination "$HOME\Downloads"
+Copy-Item : Cannot find path 'LOKASI_LENGKAP_DARI_HASIL_PENCARIAN' because it
+does not exist.
+At line:1 char:1
++ Copy-Item -LiteralPath "LOKASI_LENGKAP_DARI_HASIL_PENCARIAN" -Destina ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (LOKASI_LENGKAP_DARI_HASIL_PENCARIA
+   N:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItem
+   Command
+
+PS C:\Users\Citra Fanysa\Downloads> Get-ChildItem -Path $HOME -Recurse -Filter "File_Citra_Fanysa.pdf" -ErrorAction SilentlyContinue | Copy-Item -Destination "$HOME\Downloads"
+PS C:\Users\Citra Fanysa\Downloads> dir File_Citra_Fanysa.pdf
+dir : Cannot find path 'C:\Users\Citra Fanysa\Downloads\File_Citra_Fanysa.pdf'
+because it does not exist.
+At line:1 char:1
++ dir File_Citra_Fanysa.pdf
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...itra_Fanysa.pdf:
+   String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChild
+   ItemCommand
+
+PS C:\Users\Citra Fanysa\Downloads> dir
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+d-----         9/29/2026   7:37 PM                KID
+d-----         3/29/2026   4:25 PM                Math Tug War
+d-----         9/30/2026   8:09 AM                PEMTEKS
+d-----         9/23/2026   7:38 AM                Regular Expression (Regex)
+                                                  untuk Text Processing _ Text
+                                                  Preprocessing.ipynb -
+                                                  Colab_files
+-a----         4/17/2026   9:22 AM          19452 #wallpaper #macbook
+                                                  #macbookwallpaper #inspo.jpg
+-a----         4/11/2026   9:21 PM         856048 015 LAZADA_CITRA
+                                                  FANYSA_REVISI.docx
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM        2030051 015_Citra fanysa_IMKF.docx
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         4/23/2026   8:23 AM         116449 11 - tree_sample.ipynb
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----          4/7/2026   9:48 AM       12217917 4 - Data Analysis,
+                                                  Interpretation, and
+                                                  Presentation.pptx
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         4/16/2026   6:19 PM        1663849 Ahmad Fudhaili, S.Si., M.Sc.,
+                                                  Ph.D..png
+-a----          4/8/2026   4:38 PM          19506 BAB3_Metodologi_Citra (1).docx
+-a----          4/7/2026   9:50 PM          20914 BAB3_Metodologi_Citra.docx
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/12/2026  12:48 PM         201228 bernoulli_binomial.pptx
+-a----         4/12/2026   5:15 PM          61867 bernoulli_panjang.pptx
+-a----         4/22/2026   9:26 PM         413384 Blue Colorful Illustrative Mind
+                                                  Map Brainstorm.png
+-a----          4/3/2026  11:31 AM            149 Book Title.txt
+-a----         4/28/2026   9:41 AM          38217 BundaSehat UI.html
+-a----         4/30/2026   7:36 AM          38217 bundasehat-biru-ungu.html
+-a----         4/28/2026   9:37 AM          38090 bundasehat2.html
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/8/2026  11:43 PM         929247 CITRA FANYSA_015_IMK.docx
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         10/5/2026   8:18 AM         395813 citra_fanysa_015_KID_.ipynb
+-a----         10/5/2026   8:17 AM         393218 citra_fanysa_015_kid_.py
+-a----         5/21/2026   1:57 PM          16464 DeepSeek Logo.jpg
+-a----          9/8/2026   2:49 PM        5448841 Desain tanpa judul (1).png
+-a----         4/10/2026  10:29 AM          47122 download (1).jpg
+-a----         5/21/2026  10:07 PM          20462 download (2).jpg
+-a----          4/2/2026   7:12 AM          47122 download.jpg
+-a----         5/21/2026  10:08 PM          21809 duolingo.jpg
+-a----          4/2/2026  10:13 PM        2365695 Eco campus sustainability
+                                                  infographic.png
+-a----          6/3/2026  10:34 AM          17451 EDUVORA_Part2_Complete_v2.docx
+-a----          6/1/2026  11:21 AM          11859 EDUVORA_Part2_LowFi_Heuristic_Ev
+                                                  aluation (1).docx
+-a----          6/1/2026   9:48 PM          23074 EDUVORA_Part2_LowFi_Heuristic_Ev
+                                                  aluation.docx
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         5/26/2026   3:57 PM          78530 EKA.docx
+-a----         4/16/2026   9:17 PM          19695 Essay_EcoCampus_FINAL.docx
+-a----         4/16/2026   6:12 PM        1904548 GAMBAR ECO CAMPUS POSTER.png
+-a----         10/4/2026  12:43 AM        4502586 gambar_diagram_18.zip
+-a----          9/8/2026   2:39 PM         309712 Gemini_Generated_Image_4xyjgx4xy
+                                                  jgx4xyj.jpg
+-a----         5/21/2026   9:36 PM         847184 Gemini_Generated_Image_6s8dzr6s8
+                                                  dzr6s8d.png
+-a----         5/21/2026   6:39 PM         882249 Gemini_Generated_Image_bwxai8bwx
+                                                  ai8bwxa.png
+-a----         4/19/2026   7:12 PM        2125783 Gemini_Generated_Image_u0tkqpu0t
+                                                  kqpu0tk.png
+-a----          4/7/2026   3:58 PM        2246213 Gemini_Generated_Image_yql3kzyql
+                                                  3kzyql3.png
+-a----         5/21/2026  10:07 PM          10419 Grab Logo PNG Vector (SVG) Free
+                                                  Download.jpg
+-a----         5/21/2026   1:58 PM          15066 Grok Logo.jpg
+-a----         4/13/2026   7:25 PM          37502 hash_table_separate_chaining.svg
+-a----          4/6/2026  11:55 AM         513972 IMG-20260401-WA0006.jpg
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----         9/14/2026  12:14 PM          13275 Jawaban_Kuis_Statistika_Inferens
+                                                  ial.docx
+-a----         10/4/2026  12:44 AM         189515 K1-CDM-1_Keanggotaan_dan_Transak
+                                                  si_Peminjaman.png
+-a----         10/4/2026  12:45 AM         192196 K1-CDM-2_Stasiun__Jarak__dan_Pen
+                                                  galihan_Pengembalian.png
+-a----         10/4/2026  12:45 AM         147820 K1-CDM-3_Perbaikan_Sepeda_dan_Su
+                                                  pplier_Ban.png
+-a----         10/4/2026  12:45 AM         498789 K1-PDM-1_Keanggotaan_dan_Transak
+                                                  si_Peminjaman.png
+-a----         10/4/2026  12:45 AM         545575 K1-PDM-2_Stasiun__Jarak__dan_Pen
+                                                  galihan_Pengembalian.png
+-a----         10/4/2026  12:45 AM         428830 K1-PDM-3_Perbaikan_Sepeda_dan_Su
+                                                  pplier_Ban.png
+-a----         10/4/2026  12:45 AM         151575 K2-CDM-1_Pendaftaran_Hewan_dan_P
+                                                  encatatan_Kunjungan.png
+-a----         10/4/2026  12:45 AM         136124 K2-CDM-2_Resep_Obat_per_Kunjunga
+                                                  n.png
+-a----         10/4/2026  12:45 AM         208367 K2-CDM-3_Layanan_Tambahan__Paket
+                                                  _Bundel__dan_Rawat_Inap.png
+-a----         10/4/2026  12:45 AM         392602 K2-PDM-1_Pendaftaran_Hewan_dan_P
+                                                  encatatan_Kunjungan.png
+-a----         10/4/2026  12:45 AM         340007 K2-PDM-2_Resep_Obat_per_Kunjunga
+                                                  n.png
+-a----         10/4/2026  12:45 AM         522597 K2-PDM-3_Layanan_Tambahan__Paket
+                                                  _Bundel__dan_Rawat_Inap.png
+-a----         10/4/2026  12:45 AM         141704 K3-CDM-1_Keanggotaan_dan_Pencata
+                                                  tan_Peminjaman.png
+-a----         10/4/2026  12:45 AM         128542 K3-CDM-2_Katalog__Judul__Eksempl
+                                                  ar__dan_Kategori.png
+-a----         10/4/2026  12:45 AM         127323 K3-CDM-3_Detail_Peminjaman__Jatu
+                                                  h_Tempo__dan_Denda.png
+-a----         10/4/2026  12:45 AM         316433 K3-PDM-1_Keanggotaan_dan_Pencata
+                                                  tan_Peminjaman.png
+-a----         10/4/2026  12:45 AM         272073 K3-PDM-2_Katalog__Judul__Eksempl
+                                                  ar__dan_Kategori.png
+-a----         10/4/2026  12:45 AM         295340 K3-PDM-3_Detail_Peminjaman__Jatu
+                                                  h_Tempo__dan_Denda.png
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         4/25/2026   5:56 PM         202894 Kampus_Hijau_UNESA_ITS_UNAIR.ppt
+                                                  x
+-a----         5/17/2026   3:04 PM         650366 Kelompok_DistribusiGeometrik
+                                                  (1).png
+-a----         5/17/2026   2:45 PM         461196 Kelompok_DistribusiGeometrik.png
+-a----         10/4/2026  12:42 AM           8142 kode_sql_pdm.zip
+-a----          4/2/2026  10:13 PM        1880813 Konservasi dan keberlanjutan
+                                                  kampus eco.png
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         5/19/2026  12:21 PM         246668 Machine_Bias_COMPAS_XAI.pptx
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         9/15/2026   9:54 PM      593346560 mysql-installer-community-8.0.46
+                                                  .0.msi
+-a----          4/3/2026  12:46 PM              0 nama_mahasiswa,Book Title,Book
+                                                  Stock.txt
+-a----          9/6/2026   5:03 PM         164272 Paper_Sinyal_Sinusoidal.docx
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          6/2/2026   8:50 PM          37651 PART2_Low_Fidelity_EDUVORA.docx
+-a----         9/16/2026   7:38 AM         219170 PDF.ipynb
+-a----         9/21/2026   6:37 AM         657392 PDF_Data_Wrangling_—_Ekstraksi_d
+                                                  an_Pengolahan_Data_dari_File_PDF
+                                                  .ipynb
+-a----         4/14/2026  11:50 AM          13004 Pembahasan_PriorityQueue_HashTab
+                                                  le.docx
+-a----          9/7/2026   2:12 AM         239378 Pengolahan Sinyal Digital.docx
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         9/16/2026   7:23 PM         101390 PERJANJIAN KERJASAMA 2 (1).docx
+-a----         9/16/2026   7:33 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV (1).docx
+-a----         9/16/2026   7:33 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV (2).docx
+-a----         9/16/2026   7:32 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV.docx
+-a----         9/16/2026   7:26 PM          41425 Perjanjian_Kerja_Sama_PT_CV_Vers
+                                                  i_Baru.docx
+-a----         9/15/2026   9:15 PM       16431330 phpMyAdmin-5.2.3-all-languages.z
+                                                  ip
+-a----         5/24/2026   5:46 AM           7310 poisson_showcase.html
+-a----         5/20/2026   3:47 PM            330 PROJEK.txt
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----          4/3/2026  12:32 PM         301960 Proposal
+                                                  SDA_015_Citrafanysa.docx
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----        10/11/2026   5:29 PM            765 pub-25031554015.gpg
+-a----         9/15/2026   7:57 PM          13485 py pada skema.py
+-a----         9/23/2026   7:38 AM         782666 Regular Expression (Regex)
+                                                  untuk Text Processing _ Text
+                                                  Preprocessing.ipynb - Colab.html
+-a----         9/16/2026   9:12 AM        4434190 Rev 2 Signal and System (1).pptx
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         5/21/2026   1:56 PM           8952 Ruangguru Logo vector (_cdr).jpg
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         9/30/2026   3:25 PM           1978 ScrappingTwitter.ipymb
+-a----         4/19/2026   7:06 PM         165338 Screenshot 2026-04-19 190538.png
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         9/14/2026  12:00 PM         185264 Screenshot 2026-09-14 120036.png
+-a----         5/25/2026   2:54 PM          38457 Script_Presentasi_Algorithmic_Le
+                                                  aderboard.docx
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         5/22/2026   7:42 AM         944242 sdaproject-main.zip
+-a----         4/13/2026   7:15 PM          25584 SDA_Priority_Queue__Hash.ipynb
+-a----         5/29/2026   4:47 PM         325405 SDA_Sorting_Leaderboard.pptx
+-a----         5/20/2026   3:48 PM            442 SENIN.txt
+-a----         9/21/2026   8:08 AM           2314 shoope scrapping.py
+-a----          9/6/2026   5:12 PM         160918 Sinusoidal_Signal_Paper_EN.docx
+-a----          9/6/2026   5:22 PM         198334 sinyal_sinusoidal_tata_letak_bar
+                                                  u.png
+-a----         5/21/2026  10:07 PM          20742 Spotify.jpg
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         4/19/2026   8:35 AM         391773 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a_page-0001.jpg
+-a----         9/24/2026   6:01 AM          57793 Task 2_Regular_Expression_(Regex
+                                                  )_untuk_Text_Processing_Text_Pre
+                                                  processing.ipynb
+-a----         9/24/2026   6:01 AM         965719 Task 3_Web_Scraping_HTTP_dan_API
+                                                  .ipynb
+-a----         4/12/2026   5:16 PM          61867 TEPROB_015_CITRA FANYSA.pptx
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+-a----         9/16/2026   7:38 AM          13142 uniqlo_schema.dbml
+-a----         9/16/2026   7:33 AM           6983 uniqlo_schema_v2.dbml
+-a----         9/15/2026   7:47 PM          13485 Untitled-1.py
+-a----         9/15/2026   4:49 PM         252700 Untitled.png
+-a----         9/21/2026   9:25 PM            851 untitled12.py
+-a----          4/3/2026  12:08 PM          15776 UTS3bc_25031554015.docx
+-a----         4/29/2026   9:00 AM         442617 VB Zoom KULTAM 2026.jpg
+-a----         9/22/2026   2:04 PM         965378 Web_Scaraping_HTTP_dan_API
+                                                  _tabrizzi citra.ipynb
+-a----          4/3/2026  10:10 AM         124067 WhatsApp Image 2026-04-03 at
+                                                  09.37.28.jpeg
+-a----         4/12/2026  12:34 PM          43844 WhatsApp Image 2026-04-12 at
+                                                  12.22.21.jpeg
+-a----         4/19/2026   8:34 AM         103925 WhatsApp Image 2026-04-19 at
+                                                  08.33.43.jpeg
+-a----         4/19/2026   7:40 PM         184492 WhatsApp Image 2026-04-19 at
+                                                  19.34.05.jpeg
+-a----         4/22/2026   5:26 PM         263250 WhatsApp Image 2026-04-22 at
+                                                  17.25.32.jpeg
+-a----         4/30/2026   7:32 AM          97315 WhatsApp Image 2026-04-29 at
+                                                  20.43.38.jpeg
+-a----         5/18/2026   1:11 PM          96346 WhatsApp Image 2026-05-18 at
+                                                  13.10.47.jpeg
+-a----         5/21/2026   9:49 AM         166753 WhatsApp Image 2026-05-21 at
+                                                  09.47.16.jpeg
+-a----          6/8/2026  11:08 AM          85252 WhatsApp Image 2026-06-08 at
+                                                  11.04.33 (1).jpeg
+-a----          6/8/2026  11:08 AM         103286 WhatsApp Image 2026-06-08 at
+                                                  11.04.33 (2).jpeg
+-a----         9/14/2026  11:56 AM         144788 WhatsApp Image 2026-09-13 at
+                                                  18.14.29.jpeg
+-a----         9/14/2026  11:58 AM         160804 WhatsApp Image 2026-09-13 at
+                                                  18.15.00 - Copy.jpeg
+-a----         9/14/2026  11:58 AM         160804 WhatsApp Image 2026-09-13 at
+                                                  18.15.00.jpeg
+-a----         9/14/2026  11:58 AM         123750 WhatsApp Image 2026-09-13 at
+                                                  18.15.01 (1).jpeg
+-a----         9/15/2026   8:49 PM          49741 WhatsApp Image 2026-09-15 at
+                                                  20.29.26.jpeg
+-a----         9/28/2026   5:42 PM          23629 WhatsApp Image 2026-09-28 at
+                                                  17.40.39.jpeg
+-a----         5/21/2026   1:57 PM           6092 Zenius Education on Twitter.jpg
+-a----         5/21/2026  10:08 PM          18137 иконка ватсап.jpg
+-a----         4/17/2026   9:32 AM          36337 𝐒𝐡𝐢𝐦𝐦𝐞𝐫𝐢𝐧𝐠
+                                                  𝐬𝐤𝐢𝐞𝐬, 𝐰𝐡𝐞𝐫𝐞….jpg
+
+
+PS C:\Users\Citra Fanysa\Downloads>
+>> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> dir
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+d-----         9/29/2026   7:37 PM                KID
+d-----         3/29/2026   4:25 PM                Math Tug War
+d-----         9/30/2026   8:09 AM                PEMTEKS
+d-----         9/23/2026   7:38 AM                Regular Expression (Regex)
+                                                  untuk Text Processing _ Text
+                                                  Preprocessing.ipynb -
+                                                  Colab_files
+-a----         4/17/2026   9:22 AM          19452 #wallpaper #macbook
+                                                  #macbookwallpaper #inspo.jpg
+-a----         4/11/2026   9:21 PM         856048 015 LAZADA_CITRA
+                                                  FANYSA_REVISI.docx
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM        2030051 015_Citra fanysa_IMKF.docx
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         4/23/2026   8:23 AM         116449 11 - tree_sample.ipynb
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----          4/7/2026   9:48 AM       12217917 4 - Data Analysis,
+                                                  Interpretation, and
+                                                  Presentation.pptx
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         4/16/2026   6:19 PM        1663849 Ahmad Fudhaili, S.Si., M.Sc.,
+                                                  Ph.D..png
+-a----          4/8/2026   4:38 PM          19506 BAB3_Metodologi_Citra (1).docx
+-a----          4/7/2026   9:50 PM          20914 BAB3_Metodologi_Citra.docx
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/12/2026  12:48 PM         201228 bernoulli_binomial.pptx
+-a----         4/12/2026   5:15 PM          61867 bernoulli_panjang.pptx
+-a----         4/22/2026   9:26 PM         413384 Blue Colorful Illustrative Mind
+                                                  Map Brainstorm.png
+-a----          4/3/2026  11:31 AM            149 Book Title.txt
+-a----         4/28/2026   9:41 AM          38217 BundaSehat UI.html
+-a----         4/30/2026   7:36 AM          38217 bundasehat-biru-ungu.html
+-a----         4/28/2026   9:37 AM          38090 bundasehat2.html
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/8/2026  11:43 PM         929247 CITRA FANYSA_015_IMK.docx
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         10/5/2026   8:18 AM         395813 citra_fanysa_015_KID_.ipynb
+-a----         10/5/2026   8:17 AM         393218 citra_fanysa_015_kid_.py
+-a----         5/21/2026   1:57 PM          16464 DeepSeek Logo.jpg
+-a----          9/8/2026   2:49 PM        5448841 Desain tanpa judul (1).png
+-a----         4/10/2026  10:29 AM          47122 download (1).jpg
+-a----         5/21/2026  10:07 PM          20462 download (2).jpg
+-a----          4/2/2026   7:12 AM          47122 download.jpg
+-a----         5/21/2026  10:08 PM          21809 duolingo.jpg
+-a----          4/2/2026  10:13 PM        2365695 Eco campus sustainability
+                                                  infographic.png
+-a----          6/3/2026  10:34 AM          17451 EDUVORA_Part2_Complete_v2.docx
+-a----          6/1/2026  11:21 AM          11859 EDUVORA_Part2_LowFi_Heuristic_Ev
+                                                  aluation (1).docx
+-a----          6/1/2026   9:48 PM          23074 EDUVORA_Part2_LowFi_Heuristic_Ev
+                                                  aluation.docx
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         5/26/2026   3:57 PM          78530 EKA.docx
+-a----         4/16/2026   9:17 PM          19695 Essay_EcoCampus_FINAL.docx
+-a----         4/16/2026   6:12 PM        1904548 GAMBAR ECO CAMPUS POSTER.png
+-a----         10/4/2026  12:43 AM        4502586 gambar_diagram_18.zip
+-a----          9/8/2026   2:39 PM         309712 Gemini_Generated_Image_4xyjgx4xy
+                                                  jgx4xyj.jpg
+-a----         5/21/2026   9:36 PM         847184 Gemini_Generated_Image_6s8dzr6s8
+                                                  dzr6s8d.png
+-a----         5/21/2026   6:39 PM         882249 Gemini_Generated_Image_bwxai8bwx
+                                                  ai8bwxa.png
+-a----         4/19/2026   7:12 PM        2125783 Gemini_Generated_Image_u0tkqpu0t
+                                                  kqpu0tk.png
+-a----          4/7/2026   3:58 PM        2246213 Gemini_Generated_Image_yql3kzyql
+                                                  3kzyql3.png
+-a----         5/21/2026  10:07 PM          10419 Grab Logo PNG Vector (SVG) Free
+                                                  Download.jpg
+-a----         5/21/2026   1:58 PM          15066 Grok Logo.jpg
+-a----         4/13/2026   7:25 PM          37502 hash_table_separate_chaining.svg
+-a----          4/6/2026  11:55 AM         513972 IMG-20260401-WA0006.jpg
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----         9/14/2026  12:14 PM          13275 Jawaban_Kuis_Statistika_Inferens
+                                                  ial.docx
+-a----         10/4/2026  12:44 AM         189515 K1-CDM-1_Keanggotaan_dan_Transak
+                                                  si_Peminjaman.png
+-a----         10/4/2026  12:45 AM         192196 K1-CDM-2_Stasiun__Jarak__dan_Pen
+                                                  galihan_Pengembalian.png
+-a----         10/4/2026  12:45 AM         147820 K1-CDM-3_Perbaikan_Sepeda_dan_Su
+                                                  pplier_Ban.png
+-a----         10/4/2026  12:45 AM         498789 K1-PDM-1_Keanggotaan_dan_Transak
+                                                  si_Peminjaman.png
+-a----         10/4/2026  12:45 AM         545575 K1-PDM-2_Stasiun__Jarak__dan_Pen
+                                                  galihan_Pengembalian.png
+-a----         10/4/2026  12:45 AM         428830 K1-PDM-3_Perbaikan_Sepeda_dan_Su
+                                                  pplier_Ban.png
+-a----         10/4/2026  12:45 AM         151575 K2-CDM-1_Pendaftaran_Hewan_dan_P
+                                                  encatatan_Kunjungan.png
+-a----         10/4/2026  12:45 AM         136124 K2-CDM-2_Resep_Obat_per_Kunjunga
+                                                  n.png
+-a----         10/4/2026  12:45 AM         208367 K2-CDM-3_Layanan_Tambahan__Paket
+                                                  _Bundel__dan_Rawat_Inap.png
+-a----         10/4/2026  12:45 AM         392602 K2-PDM-1_Pendaftaran_Hewan_dan_P
+                                                  encatatan_Kunjungan.png
+-a----         10/4/2026  12:45 AM         340007 K2-PDM-2_Resep_Obat_per_Kunjunga
+                                                  n.png
+-a----         10/4/2026  12:45 AM         522597 K2-PDM-3_Layanan_Tambahan__Paket
+                                                  _Bundel__dan_Rawat_Inap.png
+-a----         10/4/2026  12:45 AM         141704 K3-CDM-1_Keanggotaan_dan_Pencata
+                                                  tan_Peminjaman.png
+-a----         10/4/2026  12:45 AM         128542 K3-CDM-2_Katalog__Judul__Eksempl
+                                                  ar__dan_Kategori.png
+-a----         10/4/2026  12:45 AM         127323 K3-CDM-3_Detail_Peminjaman__Jatu
+                                                  h_Tempo__dan_Denda.png
+-a----         10/4/2026  12:45 AM         316433 K3-PDM-1_Keanggotaan_dan_Pencata
+                                                  tan_Peminjaman.png
+-a----         10/4/2026  12:45 AM         272073 K3-PDM-2_Katalog__Judul__Eksempl
+                                                  ar__dan_Kategori.png
+-a----         10/4/2026  12:45 AM         295340 K3-PDM-3_Detail_Peminjaman__Jatu
+                                                  h_Tempo__dan_Denda.png
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         4/25/2026   5:56 PM         202894 Kampus_Hijau_UNESA_ITS_UNAIR.ppt
+                                                  x
+-a----         5/17/2026   3:04 PM         650366 Kelompok_DistribusiGeometrik
+                                                  (1).png
+-a----         5/17/2026   2:45 PM         461196 Kelompok_DistribusiGeometrik.png
+-a----         10/4/2026  12:42 AM           8142 kode_sql_pdm.zip
+-a----          4/2/2026  10:13 PM        1880813 Konservasi dan keberlanjutan
+                                                  kampus eco.png
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         5/19/2026  12:21 PM         246668 Machine_Bias_COMPAS_XAI.pptx
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         9/15/2026   9:54 PM      593346560 mysql-installer-community-8.0.46
+                                                  .0.msi
+-a----          4/3/2026  12:46 PM              0 nama_mahasiswa,Book Title,Book
+                                                  Stock.txt
+-a----          9/6/2026   5:03 PM         164272 Paper_Sinyal_Sinusoidal.docx
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          6/2/2026   8:50 PM          37651 PART2_Low_Fidelity_EDUVORA.docx
+-a----         9/16/2026   7:38 AM         219170 PDF.ipynb
+-a----         9/21/2026   6:37 AM         657392 PDF_Data_Wrangling_—_Ekstraksi_d
+                                                  an_Pengolahan_Data_dari_File_PDF
+                                                  .ipynb
+-a----         4/14/2026  11:50 AM          13004 Pembahasan_PriorityQueue_HashTab
+                                                  le.docx
+-a----          9/7/2026   2:12 AM         239378 Pengolahan Sinyal Digital.docx
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         9/16/2026   7:23 PM         101390 PERJANJIAN KERJASAMA 2 (1).docx
+-a----         9/16/2026   7:33 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV (1).docx
+-a----         9/16/2026   7:33 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV (2).docx
+-a----         9/16/2026   7:32 PM          41982 Perjanjian_Kerja_Sama_Distribusi
+                                                  _dan_Pemasaran_PT_CV.docx
+-a----         9/16/2026   7:26 PM          41425 Perjanjian_Kerja_Sama_PT_CV_Vers
+                                                  i_Baru.docx
+-a----         9/15/2026   9:15 PM       16431330 phpMyAdmin-5.2.3-all-languages.z
+                                                  ip
+-a----         5/24/2026   5:46 AM           7310 poisson_showcase.html
+-a----         5/20/2026   3:47 PM            330 PROJEK.txt
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----          4/3/2026  12:32 PM         301960 Proposal
+                                                  SDA_015_Citrafanysa.docx
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----        10/11/2026   5:29 PM            765 pub-25031554015.gpg
+-a----         9/15/2026   7:57 PM          13485 py pada skema.py
+-a----         9/23/2026   7:38 AM         782666 Regular Expression (Regex)
+                                                  untuk Text Processing _ Text
+                                                  Preprocessing.ipynb - Colab.html
+-a----         9/16/2026   9:12 AM        4434190 Rev 2 Signal and System (1).pptx
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         5/21/2026   1:56 PM           8952 Ruangguru Logo vector (_cdr).jpg
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         9/30/2026   3:25 PM           1978 ScrappingTwitter.ipymb
+-a----         4/19/2026   7:06 PM         165338 Screenshot 2026-04-19 190538.png
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         9/14/2026  12:00 PM         185264 Screenshot 2026-09-14 120036.png
+-a----         5/25/2026   2:54 PM          38457 Script_Presentasi_Algorithmic_Le
+                                                  aderboard.docx
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         5/22/2026   7:42 AM         944242 sdaproject-main.zip
+-a----         4/13/2026   7:15 PM          25584 SDA_Priority_Queue__Hash.ipynb
+-a----         5/29/2026   4:47 PM         325405 SDA_Sorting_Leaderboard.pptx
+-a----         5/20/2026   3:48 PM            442 SENIN.txt
+-a----         9/21/2026   8:08 AM           2314 shoope scrapping.py
+-a----          9/6/2026   5:12 PM         160918 Sinusoidal_Signal_Paper_EN.docx
+-a----          9/6/2026   5:22 PM         198334 sinyal_sinusoidal_tata_letak_bar
+                                                  u.png
+-a----         5/21/2026  10:07 PM          20742 Spotify.jpg
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         4/19/2026   8:35 AM         391773 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a_page-0001.jpg
+-a----         9/24/2026   6:01 AM          57793 Task 2_Regular_Expression_(Regex
+                                                  )_untuk_Text_Processing_Text_Pre
+                                                  processing.ipynb
+-a----         9/24/2026   6:01 AM         965719 Task 3_Web_Scraping_HTTP_dan_API
+                                                  .ipynb
+-a----         4/12/2026   5:16 PM          61867 TEPROB_015_CITRA FANYSA.pptx
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+-a----         9/16/2026   7:38 AM          13142 uniqlo_schema.dbml
+-a----         9/16/2026   7:33 AM           6983 uniqlo_schema_v2.dbml
+-a----         9/15/2026   7:47 PM          13485 Untitled-1.py
+-a----         9/15/2026   4:49 PM         252700 Untitled.png
+-a----         9/21/2026   9:25 PM            851 untitled12.py
+-a----          4/3/2026  12:08 PM          15776 UTS3bc_25031554015.docx
+-a----         4/29/2026   9:00 AM         442617 VB Zoom KULTAM 2026.jpg
+-a----         9/22/2026   2:04 PM         965378 Web_Scaraping_HTTP_dan_API
+                                                  _tabrizzi citra.ipynb
+-a----          4/3/2026  10:10 AM         124067 WhatsApp Image 2026-04-03 at
+                                                  09.37.28.jpeg
+-a----         4/12/2026  12:34 PM          43844 WhatsApp Image 2026-04-12 at
+                                                  12.22.21.jpeg
+-a----         4/19/2026   8:34 AM         103925 WhatsApp Image 2026-04-19 at
+                                                  08.33.43.jpeg
+-a----         4/19/2026   7:40 PM         184492 WhatsApp Image 2026-04-19 at
+                                                  19.34.05.jpeg
+-a----         4/22/2026   5:26 PM         263250 WhatsApp Image 2026-04-22 at
+                                                  17.25.32.jpeg
+-a----         4/30/2026   7:32 AM          97315 WhatsApp Image 2026-04-29 at
+                                                  20.43.38.jpeg
+-a----         5/18/2026   1:11 PM          96346 WhatsApp Image 2026-05-18 at
+                                                  13.10.47.jpeg
+-a----         5/21/2026   9:49 AM         166753 WhatsApp Image 2026-05-21 at
+                                                  09.47.16.jpeg
+-a----          6/8/2026  11:08 AM          85252 WhatsApp Image 2026-06-08 at
+                                                  11.04.33 (1).jpeg
+-a----          6/8/2026  11:08 AM         103286 WhatsApp Image 2026-06-08 at
+                                                  11.04.33 (2).jpeg
+-a----         9/14/2026  11:56 AM         144788 WhatsApp Image 2026-09-13 at
+                                                  18.14.29.jpeg
+-a----         9/14/2026  11:58 AM         160804 WhatsApp Image 2026-09-13 at
+                                                  18.15.00 - Copy.jpeg
+-a----         9/14/2026  11:58 AM         160804 WhatsApp Image 2026-09-13 at
+                                                  18.15.00.jpeg
+-a----         9/14/2026  11:58 AM         123750 WhatsApp Image 2026-09-13 at
+                                                  18.15.01 (1).jpeg
+-a----         9/15/2026   8:49 PM          49741 WhatsApp Image 2026-09-15 at
+                                                  20.29.26.jpeg
+-a----         9/28/2026   5:42 PM          23629 WhatsApp Image 2026-09-28 at
+                                                  17.40.39.jpeg
+-a----         5/21/2026   1:57 PM           6092 Zenius Education on Twitter.jpg
+-a----         5/21/2026  10:08 PM          18137 иконка ватсап.jpg
+-a----         4/17/2026   9:32 AM          36337 𝐒𝐡𝐢𝐦𝐦𝐞𝐫𝐢𝐧𝐠
+                                                  𝐬𝐤𝐢𝐞𝐬, 𝐰𝐡𝐞𝐫𝐞….jpg
+
+
+PS C:\Users\Citra Fanysa\Downloads> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/29/2026   9:24 AM                contentsample_dataFile Data
+                                                  Wrangling tps sampah.pdf
+-a----          4/6/2026   9:20 AM         580271 015_Citra fanysa_IMK.pdf
+-a----          4/7/2026   5:26 PM         813703 015_Citra fanysa_IMKFINAL.pdf
+-a----          4/6/2026   8:22 PM         498700 015_CITRA FANYSA_KALKULUS.pdf
+-a----         4/10/2026   4:03 PM         328678 015_WEEK 11_CITRA FANYSA.pdf
+-a----          9/8/2026   1:34 PM        2043630 1. Pengantar basis data.pdf
+-a----         9/14/2026  11:58 AM        2062225 2. Distribusi Sampling.pdf
+-a----         9/10/2026  10:29 AM        1971843 4_Web Scraping.pdf
+-a----         9/26/2026   9:56 PM        1999633 5_Data integration (1).pdf
+-a----         9/29/2026   9:12 AM        1999633 5_Data integration (2).pdf
+-a----         9/23/2026   8:19 AM        1999633 5_Data integration.pdf
+-a----         4/13/2026   7:15 PM        1333244 9 Priority Queue  HashTable.pdf
+-a----         9/15/2026  10:11 PM         978129 BASIS DATA_CITRA FANYSA
+                                                  015_MAIN ACTIVITY.pdf
+-a----         4/29/2026   8:31 AM          33862 CETAK KHS CITRA FANYSA.pdf
+-a----         10/5/2026   7:54 AM         216348 Citra fanysa INT 2025.pdf
+-a----          4/7/2026   9:53 AM        5171162 CITRA FANYSA_015_IMK.pdf
+-a----         9/16/2026  12:32 PM       77951446 Ejaan dan Tata Bahasa [Kelompok
+                                                  4].pdf
+-a----         9/14/2026  11:56 AM        1782201 int Estimasi Titik dan Interval
+                                                  Satu Sampel.pdf
+-a----          5/6/2026  10:03 AM         480608 Kalender Akademik TA
+                                                  2026-2027._1767948287.pdf
+-a----         10/1/2026   9:38 PM         307138 LKM 1_2026.pdf
+-a----         5/21/2026   6:14 PM          41502 LoFi_Prototype_Sketsa_EMS.pdf
+-a----         9/22/2026   2:32 PM        5593548 MATERI PEMTEKS.pdf
+-a----          4/2/2026   9:50 PM         316018 Middle Test Data Structure and
+                                                  Algoritm 2026.pdf
+-a----         5/21/2026  10:49 AM          51643 Part2_LowFi_Wireframe_EMS.pdf
+-a----          9/6/2026   5:54 PM         453861 Pengolahan Sinyal Digital.pdf
+-a----         5/12/2026   8:58 PM           7370 Proofing_Distributions.pdf
+-a----         9/15/2026   7:50 PM         169001 proposal_uniqlo.pdf
+-a----         9/28/2026   5:35 PM        3421412 Rev 3 dan 4. Konvolusi dan
+                                                  Respons Impuls.pdf
+-a----         4/19/2026   8:36 AM         496584 SAUDARI CITRA FANYSA.pdf
+-a----         5/21/2026   2:06 PM        3267913 Screenshot 2026-05-21 133526.pdf
+-a----         5/25/2026   2:49 PM           2907 Script_Presentasi_SDA_Sorting.pd
+                                                  f
+-a----         4/19/2026   8:30 AM          16581 Surat_Keterangan_Lab_Citra_Fanys
+                                                  a.pdf
+-a----         9/21/2026   6:35 AM         125549 TUGAS DATA WRANGLING TABRIZZI
+                                                  AQLIA dan CITRA FANYSA.pdf
+
+
+PS C:\Users\Citra Fanysa\Downloads> gpg --yes --output pub-25031554015.gpg --armor --export 25031554015@mhs.unesa.ac.id
+PS C:\Users\Citra Fanysa\Downloads> dir pub-25031554015.gpg
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/11/2026   5:38 PM            765 pub-25031554015.gpg
+
+
+PS C:\Users\Citra Fanysa\Downloads> dir *.zip
+
+
+    Directory: C:\Users\Citra Fanysa\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         10/4/2026  12:43 AM        4502586 gambar_diagram_18.zip
+-a----         10/4/2026  12:42 AM           8142 kode_sql_pdm.zip
+-a----         9/15/2026   9:15 PM       16431330 phpMyAdmin-5.2.3-all-languages.z
+                                                  ip
+-a----         5/22/2026   7:42 AM         944242 sdaproject-main.zip
+
+
+PS C:\Users\Citra Fanysa\Downloads> Expand-Archive -LiteralPath "Tabrizzi_Aqlia_GPG.zip" -DestinationPath "Tabrizzi"
+Expand-Archive : The path 'Tabrizzi_Aqlia_GPG.zip' either does not exist or is
+not a valid file system path.
+At line:1 char:1
++ Expand-Archive -LiteralPath "Tabrizzi_Aqlia_GPG.zip" -DestinationPath ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Tabrizzi_Aqlia_GPG.zip:String) [E
+   xpand-Archive], InvalidOperationException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+
+PS C:\Users\Citra Fanysa\Downloads> cd Tabrizzi
+PS C:\Users\Citra Fanysa\Downloads\Tabrizzi> dir
+PS C:\Users\Citra Fanysa\Downloads\Tabrizzi> cd "$HOME\OneDrive\Documents\kid-lkm"
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File Citra Fanysa.pdf
+-a---l        10/11/2026   5:12 PM         109897 File_Tabrizzi_Aqlia.pdf
+-a---l        10/11/2026   5:12 PM            147 File_Tabrizzi_Aqlia.pdf.sig
+-a---l        10/11/2026   5:12 PM            769 pub-25031554008.gpg
+-a---l        10/11/2026   5:11 PM         104062 Tabrizzi_Aqlia_GPG.zip
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-ChildItem -Path $HOME -Recurse -Directory -Filter "kid-lkm" -ErrorAction SilentlyContinue | Select-Object FullName
+
+FullName
+--------
+C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Rename-Item -LiteralPath "File Citra Fanysa.pdf" -NewName "File_Citra_Fanysa.pdf"
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir *.pdf
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File_Citra_Fanysa.pdf
+-a---l        10/11/2026   5:12 PM         109897 File_Tabrizzi_Aqlia.pdf
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --import pub-25031554008.gpg
+gpg: key 5963A326A48C6CCC: public key "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --verify File_Tabrizzi_Aqlia.pdf.sig File_Tabrizzi_Aqlia.pdf
+gpg: Signature made 10/11/26 15:43:02 SE Asia Standard Time
+gpg:                using EDDSA key 5D56B8512900168F04E0A6E45963A326A48C6CCC
+gpg: Good signature from "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --yes --output File_Citra_Fanysa.pdf.sig --detach-sign File_Citra_Fanysa.pdf
+gpg: signing failed: Bad passphrase
+gpg: signing failed: Bad passphrase
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir *.sig
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:12 PM            147 File_Tabrizzi_Aqlia.pdf.sig
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --verify File_Citra_Fanysa.pdf.sig File_Citra_Fanysa.pdf
+gpg: can't open 'File_Citra_Fanysa.pdf.sig': No such file or directory
+gpg: verify signatures failed: No such file or directory
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Copy-Item -LiteralPath "$HOME\Downloads\pub-25031554015.gpg" -Destination .
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File_Citra_Fanysa.pdf
+-a---l        10/11/2026   5:12 PM         109897 File_Tabrizzi_Aqlia.pdf
+-a---l        10/11/2026   5:12 PM            147 File_Tabrizzi_Aqlia.pdf.sig
+-a---l        10/11/2026   5:12 PM            769 pub-25031554008.gpg
+-a---l        10/11/2026   5:38 PM            765 pub-25031554015.gpg
+-a---l        10/11/2026   5:11 PM         104062 Tabrizzi_Aqlia_GPG.zip
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --yes --output File_Citra_Fanysa.pdf.sig --detach-sign File_Citra_Fanysa.pdf
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm>
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir *.sig
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:54 PM            147 File_Citra_Fanysa.pdf.sig
+-a---l        10/11/2026   5:12 PM            147 File_Tabrizzi_Aqlia.pdf.sig
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --verify File_Citra_Fanysa.pdf.sig File_Citra_Fanysa.pdf
+gpg: Signature made 10/11/26 17:52:53 SE Asia Standard Time
+gpg:                using EDDSA key 7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+gpg: Good signature from "Citra Fanysa <25031554015@mhs.unesa.ac.id>" [ultimate]
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Compress-Archive -LiteralPath "pub-25031554015.gpg","File_Citra_Fanysa.pdf","File_Citra_Fanysa.pdf.sig" -DestinationPath "Citra_Fanysa_GPG.zip" -Force
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Citra_Fanysa_GPG.zip
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:56 PM         101357 Citra_Fanysa_GPG.zip
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm\Citra_Fanysa_GPG.zip
+C:\Users\Citra : The term 'C:\Users\Citra' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm\Citra_Fanysa_GPG.zip
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra:String) [], Command
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Citra_Fanysa_GPG.zip
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:56 PM         101357 Citra_Fanysa_GPG.zip
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Compress-Archive -LiteralPath "pub-25031554015.gpg","File_Citra_Fanysa.pdf","File_Citra_Fanysa.pdf.sig" -DestinationPath "Citra_Fanysa_GPG.zip" -Force
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Citra_Fanysa_GPG.zip
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:58 PM         101357 Citra_Fanysa_GPG.zip
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> explorer .
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Add-Type -AssemblyName System.IO.Compression.FileSystem
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> [IO.Compression.ZipFile]::OpenRead("$PWD\Citra_Fanysa_GPG.zip").Entries | Select-Object Name, Length
+
+Name                      Length
+----                      ------
+pub-25031554015.gpg          765
+File_Citra_Fanysa.pdf     107252
+File_Citra_Fanysa.pdf.sig    147
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output Tabrizzi_Aqlia_GPG.zip.gpg --encrypt --recipient 25031554008@mhs.unesa.ac.id Tabrizzi_Aqlia_GPG.zip
+gpg: E736E57F6D5B40F1: There is no assurance this key belongs to the named user
+
+sub  cv25519/E736E57F6D5B40F1 2026-10-11 Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N)
+gpg: Tabrizzi_Aqlia_GPG.zip: encryption failed: Unusable public key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Tabrizzi_Aqlia_GPG.zip.gpg
+
+dir : Cannot find path 'C:\Users\Citra
+Fanysa\OneDrive\Documents\kid-lkm\Tabrizzi_Aqlia_GPG.zip.gpg' because it does not
+exist.
+At line:1 char:1
++ dir Tabrizzi_Aqlia_GPG.zip.gpg
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...lia_GPG.zip.gpg:
+   String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChild
+   ItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output Tabrizzi_Aqlia_GPG.zip.gpg --encrypt --recipient 25031554008@mhs.unesa.ac.id Tabrizzi_Aqlia_GPG.zip
+gpg: E736E57F6D5B40F1: There is no assurance this key belongs to the named user
+
+sub  cv25519/E736E57F6D5B40F1 2026-10-11 Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) dir File_Citra_Fanysa.pdf.gpg
+gpg: Tabrizzi_Aqlia_GPG.zip: encryption failed: Unusable public key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Tabrizzi_Aqlia_GPG.zip.gpg
+
+dir : Cannot find path 'C:\Users\Citra
+Fanysa\OneDrive\Documents\kid-lkm\Tabrizzi_Aqlia_GPG.zip.gpg' because it does not
+exist.
+At line:1 char:1
++ dir Tabrizzi_Aqlia_GPG.zip.gpg
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...lia_GPG.zip.gpg:
+   String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChild
+   ItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output Tabrizzi_Aqlia_GPG.zip.gpg --encrypt --recipient 25031554008@mhs.unesa.ac.id Tabrizzi_Aqlia_GPG.zip
+gpg: E736E57F6D5B40F1: There is no assurance this key belongs to the named user
+
+sub  cv25519/E736E57F6D5B40F1 2026-10-11 Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N)
+gpg: Tabrizzi_Aqlia_GPG.zip: encryption failed: Unusable public key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir Tabrizzi_Aqlia_GPG.zip.gpggpg --output Tabrizzi_Aqlia_GPG_dekripsi.zip --decrypt Tabrizzi_Aqlia_GPG.zip.gpg
+Get-ChildItem : A positional parameter cannot be found that accepts argument
+'Tabrizzi_Aqlia_GPG_dekripsi.zip'.
+At line:1 char:1
++ dir Tabrizzi_Aqlia_GPG.zip.gpggpg --output Tabrizzi_Aqlia_GPG_dekrips ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBind
+   ingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Co
+   mmands.GetChildItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --trust-model always --output File_Citra_Fanysa.pdf.gpg --encrypt --recipient 25031554008@mhs.unesa.ac.id File_Citra_Fanysa.pdf
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra_Fanysa.pdf.gpg
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Citra_Fanysa_dekripsi.pdf --decrypt File_Citra_Fanysa.pdf.gpg
+gpg: encrypted with cv25519 key, ID E736E57F6D5B40F1, created 2026-10-11
+      "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>"
+gpg: public key decryption failed: No secret key
+gpg: decryption failed: No secret key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-FileHash File_Citra_Fanysa.pdf -Algorithm SHA256
+
+Algorithm       Hash
+---------       ----
+SHA256          2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra_Fanysa_dekripsi.pdf
+dir : Cannot find path 'C:\Users\Citra
+Fanysa\OneDrive\Documents\kid-lkm\File_Citra_Fanysa_dekripsi.pdf' because it does
+not exist.
+At line:1 char:1
++ dir File_Citra_Fanysa_dekripsi.pdf
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...sa_dekripsi.pdf:
+   String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChild
+   ItemCommand
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> 2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7
+2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7 : The term
+'2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7' is not
+recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ 2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (2E3A2FA72190218...F8DAD8ADDEA26B7:
+   String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Tabrizzi_Aqlia_dekripsi.pdf --decrypt File_Tabrizzi_Aqlia.pdf.gpg
+gpg: can't open 'File_Tabrizzi_Aqlia.pdf.gpg': No such file or directory
+gpg: decrypt_message failed: No such file or directory
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir *.gpg
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+-a---l        10/11/2026   5:12 PM            769 pub-25031554008.gpg
+-a---l        10/11/2026   5:38 PM            765 pub-25031554015.gpg
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-ChildItem -Path $HOME -Recurse -Filter "File_Tabrizzi_Aqlia.pdf.gpg*" -ErrorAction SilentlyContinue | Select-Object FullName
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --trust-model always --output File_Tabrizzi_Aqlia.pdf.gpg --encrypt --recipient 25031554015@mhs.unesa.ac.id File_Tabrizzi_Aqlia.pdf
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Tabrizzi_Aqlia_dekripsi.pdf --decrypt File_Tabrizzi_Aqlia.pdf.gpg
+gpg: encrypted with cv25519 key, ID C0393FA60796C25A, created 2026-10-11
+      "CitraFanysa <25031554015@mhs.unesa.ac.id>"
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-FileHash File_Tabrizzi_Aqlia_dekripsi.pdf -Algorithm SHA256
+
+Algorithm       Hash
+---------       ----
+SHA256          DE8D34A3575659EE25B183FFABC4AD455F12428A0F91CAE0C94EB53D77B837C3
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-FileHash File_Tabrizzi_Aqlia.pdf -Algorithm SHA256
+
+Algorithm       Hash
+---------       ----
+SHA256          DE8D34A3575659EE25B183FFABC4AD455F12428A0F91CAE0C94EB53D77B837C3
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Tabrizzi_Aqlia_dekripsi.pdf --decrypt File_Tabrizzi_Aqlia.pdf.gpg
+gpg: encrypted with cv25519 key, ID C0393FA60796C25A, created 2026-10-11
+      "CitraFanysa <25031554015@mhs.unesa.ac.id>"
+File 'File_Tabrizzi_Aqlia_dekripsi.pdf' exists. Overwrite? (y/N) y
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Citra_Fanysa_dekripsi.pdf --decrypt File_Citra_Fanysa.pdf.gpg
+gpg: encrypted with cv25519 key, ID E736E57F6D5B40F1, created 2026-10-11
+      "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>"
+gpg: public key decryption failed: No secret key
+gpg: decryption failed: No secret key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra*
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File_Citra_Fanysa.pdf
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+-a---l        10/11/2026   5:54 PM            147 File_Citra_Fanysa.pdf.sig
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Citra_Fanysa.pdf.sig --detach-sign File_Citra_Fanysa.pdf
+File 'File_Citra_Fanysa.pdf.sig' exists. Overwrite? (y/N) y
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra_Fanysa.pdf*
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File_Citra_Fanysa.pdf
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+-a---l        10/11/2026   6:40 PM            147 File_Citra_Fanysa.pdf.sig
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Citra_Fanysa.pdf.sig --detach-sign File_Citra_Fanysa.pdf
+File 'File_Citra_Fanysa.pdf.sig' exists. Overwrite? (y/N) y
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra_Fanysa.pdf*
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:10 PM         107252 File_Citra_Fanysa.pdf
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+-a---l        10/11/2026   6:41 PM            147 File_Citra_Fanysa.pdf.sig
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --verify File_Tabrizzi_Aqlia.pdf.sig File_Tabrizzi_Aqlia.pdf
+gpg: Signature made 10/11/26 15:43:02 SE Asia Standard Time
+gpg:                using EDDSA key 5D56B8512900168F04E0A6E45963A326A48C6CCC
+gpg: Good signature from "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Tabrizzi_Aqlia_dekripsi.pdf --decrypt File_Tabrizzi_Aqlia.pdf.gpg
+gpg: encrypted with cv25519 key, ID C0393FA60796C25A, created 2026-10-11
+      "CitraFanysa <25031554015@mhs.unesa.ac.id>"
+File 'File_Tabrizzi_Aqlia_dekripsi.pdf' exists. Overwrite? (y/N) y
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Tabrizzi*
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   5:12 PM         109897 File_Tabrizzi_Aqlia.pdf
+-a---l        10/11/2026   6:26 PM         110093 File_Tabrizzi_Aqlia.pdf.gpg
+-a---l        10/11/2026   5:12 PM            147 File_Tabrizzi_Aqlia.pdf.sig
+-a---l        10/11/2026   6:49 PM         109897 File_Tabrizzi_Aqlia_dekripsi.pdf
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> dir File_Citra_Fanysa.pdf.gpg
+
+
+    Directory: C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        10/11/2026   6:20 PM         107447 File_Citra_Fanysa.pdf.gpg
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --list-only File_Citra_Fanysa.pdf.gpg
+gpg: WARNING: no command supplied.  Trying to guess what you mean ...
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm>
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --output File_Citra_Fanysa_dekripsi.pdf --decrypt File_Citra_Fanysa.pdf.gpg
+gpg: encrypted with cv25519 key, ID E736E57F6D5B40F1, created 2026-10-11
+      "Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>"
+gpg: public key decryption failed: No secret key
+gpg: decryption failed: No secret key
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> Get-FileHash File_Citra_Fanysa.pdf, File_Citra_Fanysa_dekripsi.pdf
+Resolve-Path : Cannot find path 'C:\Users\Citra
+Fanysa\OneDrive\Documents\kid-lkm\File_Citra_Fanysa_dekripsi.pdf' because it does not exist.
+At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShe
+ll.Utility.psm1:110 char:36
++                 $pathsToProcess += Resolve-Path $Path | Foreach-Objec ...
++                                    ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Citra ...sa_dekripsi.pdf:String) [Resolve-Pa
+   th], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          2E3A2FA72190218A24DEEF02A682B6B69AC3D7329E0FFC312F8DAD8ADDEA26B7       C:\Users\Ci...
+
+
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm> gpg --verify File_Citra_Fanysa.pdf.sig File_Citra_Fanysa_dekripsi.pdf
+gpg: can't open signed data 'File_Citra_Fanysa_dekripsi.pdf'
+gpg: can't hash datafile: No such file or directory
+PS C:\Users\Citra Fanysa\OneDrive\Documents\kid-lkm>

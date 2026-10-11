@@ -1,0 +1,170 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Citra Fanysa> cd $HOME\Documents
+PS C:\Users\Citra Fanysa\Documents> gpg --help
+gpg (GnuPG) 2.5.24
+libgcrypt 1.12.4
+Copyright (C) 2026 g10 Code GmbH
+License GNU GPL-3.0-or-later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: C:\Users\Citra Fanysa\AppData\Roaming\gnupg
+Supported algorithms:
+Pubkey: RSA, Kyber, ELG, DSA, ECDH, ECDSA, EDDSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
+        CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+
+Syntax: gpg [options] [files]
+Sign, check, encrypt or decrypt
+Default operation depends on the input data
+
+Commands:
+
+ -s, --sign                         make a signature
+     --clear-sign                   make a clear text signature
+ -b, --detach-sign                  make a detached signature
+ -e, --encrypt                      encrypt data
+ -c, --symmetric                    encryption only with symmetric cipher
+ -d, --decrypt                      decrypt data (default)
+     --verify                       verify a signature
+ -k, --list-keys                    list keys
+     --list-signatures              list keys and signatures
+     --check-signatures             list and check key signatures
+     --fingerprint                  list keys and fingerprints
+ -K, --list-secret-keys             list secret keys
+     --generate-key                 generate a new key pair
+     --quick-generate-key           quickly generate a new key pair
+     --quick-add-uid                quickly add a new user-id
+     --quick-revoke-uid             quickly revoke a user-id
+     --quick-set-expire             quickly set a new expiration date
+     --full-generate-key            full featured key pair generation
+     --generate-revocation          generate a revocation certificate
+     --delete-keys                  remove keys from the public keyring
+     --delete-secret-keys           remove keys from the secret keyring
+     --quick-sign-key               quickly sign a key
+     --quick-lsign-key              quickly sign a key locally
+     --quick-tsign-key              quickly sign a key with a trust signature
+     --quick-revoke-sig             quickly revoke a key signature
+     --sign-key                     sign a key
+     --lsign-key                    sign a key locally
+     --edit-key                     sign or edit a key
+     --change-passphrase            change a passphrase
+     --export                       export keys
+     --send-keys                    export keys to a keyserver
+     --receive-keys                 import keys from a keyserver
+     --search-keys                  search for keys on a keyserver
+     --refresh-keys                 update all keys from a keyserver
+     --import                       import/merge keys
+     --card-status                  print the card status
+     --edit-card                    change data on a card
+     --change-pin                   change a card's PIN
+     --update-trustdb               update the trust database
+     --print-md                     print message digests
+     --server                       run in server mode
+     --tofu-policy VALUE            set the TOFU policy for a key
+
+Options controlling the diagnostic output:
+ -v, --verbose                      verbose
+ -q, --quiet                        be somewhat more quiet
+     --options FILE                 read options from FILE
+     --log-file FILE                write server mode logs to FILE
+
+Options controlling the configuration:
+     --default-key NAME             use NAME as default secret key
+     --encrypt-to NAME              encrypt to user ID NAME as well
+     --group SPEC                   set up email aliases
+     --openpgp                      use strict OpenPGP behavior
+ -n, --dry-run                      do not make any changes
+ -i, --interactive                  prompt before overwriting
+
+Options controlling the output:
+ -a, --armor                        create ascii armored output
+ -o, --output FILE                  write output to FILE
+ -z N                               set compress level to N (0 disables)
+
+Options controlling key import and export:
+     --auto-key-locate MECHANISMS   use MECHANISMS to locate keys by mail address
+     --auto-key-import              import missing key from a signature
+     --include-key-block            include the public key in signatures
+     --disable-dirmngr              disable all access to the dirmngr
+
+Options to specify keys:
+ -r, --recipient USER-ID            encrypt for USER-ID
+ -u, --local-user USER-ID           use USER-ID to sign or decrypt
+
+(See the man page for a complete listing of all commands and options)
+
+Examples:
+
+ -se -r Bob [file]          sign and encrypt for user Bob
+ --clear-sign [file]        make a clear text signature
+ --detach-sign [file]       make a detached signature
+ --list-keys [names]        show keys
+ --fingerprint [names]      show fingerprints
+
+Please report bugs to <https://bugs.gnupg.org>.
+PS C:\Users\Citra Fanysa\Documents> "the place only we know.." | Set-Content -Encoding ascii thesecret.txt
+PS C:\Users\Citra Fanysa\Documents> type thesecret.txt
+the place only we know..
+PS C:\Users\Citra Fanysa\Documents> Format-Hex thesecret.txt
+
+
+           Path: C:\Users\Citra Fanysa\Documents\thesecret.txt
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   74 68 65 20 70 6C 61 63 65 20 6F 6E 6C 79 20 77  the place only w
+00000010   65 20 6B 6E 6F 77 2E 2E 0D 0A                    e know....
+
+
+PS C:\Users\Citra Fanysa\Documents> gpg -o encrypted.gpg --cipher-algo AES -c thesecret.txt
+PS C:\Users\Citra Fanysa\Documents> gpg -o gpg -o encrypted.gpg --cipher-algo AES -c thesecret.txt
+File 'encrypted.gpg' exists. Overwrite? (y/N) y
+PS C:\Users\Citra Fanysa\Documents> Format-Hex encrypted.gpg
+
+
+           Path: C:\Users\Citra Fanysa\Documents\encrypted.gpg
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   8C 0D 04 07 03 08 C4 C8 1B D1 DD DA CB 4C F0 D2  .....ÄÈ.ÑÝÚËLðÒ
+00000010   5B 01 C3 8B 41 7D CF 18 C5 03 E5 92 74 CE 29 FF  [.ÃA}Ï.Å.åtÎ).
+00000020   D3 31 D8 2E 87 BB 31 74 B4 4D 1D FC BD C5 B2 74  Ó1Ø.»1t´M.ü½Å²t
+00000030   62 E7 79 AF 88 23 E7 BB 44 2F 0D 24 7A F9 B6 D0  bçy¯#ç»D/.$zù¶Ð
+00000040   6A 37 D3 56 D2 4A 54 AB 80 21 87 3C 35 8D A9 26  j7ÓVÒJT«!<5©&
+00000050   5A B6 E0 38 B3 68 66 C9 41 25 04 52 35 CF 12 BA  Z¶à8³hfÉA%.R5Ï.º
+00000060   30 1B D8 9D 93 2C E9 1E 44 95 B8 80              0.Ø,é.D¸
+
+
+PS C:\Users\Citra Fanysa\Documents> gpg -d encrypted.gpg
+gpg: AES.CFB encrypted data
+gpg: encrypted with 1 passphrase
+the place only we know..
+PS C:\Users\Citra Fanysa\Documents> gpg -o encrypted256.gpg --cipher-algo AES256 -c thesecret.txt
+PS C:\Users\Citra Fanysa\Documents> Format-Hex encrypted256.gpg
+
+
+           Path: C:\Users\Citra Fanysa\Documents\encrypted256.gpg
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   8C 0D 04 09 03 08 41 73 C9 E7 B7 A6 46 8A F0 D2  .....AsÉç·¦FðÒ
+00000010   5B 01 92 D5 A0 60 83 9C 18 50 AF A1 E5 98 8F DC  [.Õ `.P¯¡åÜ
+00000020   CD 6E 0C 56 58 DE 54 EB 10 36 EC 79 D3 91 EB A5  Ín.VXÞTë.6ìyÓë¥
+00000030   67 89 DD A9 AC 3F 60 62 DD 5B 64 40 17 E7 62 43  gÝ©¬?`bÝ[d@.çbC
+00000040   64 01 F4 C2 10 40 D0 05 68 65 84 83 B0 60 03 73  d.ôÂ.@Ð.he°`.s
+00000050   E4 27 49 16 7F 71 45 57 4C 6A 7B F2 C6 20 13 A4  ä'I.qEWLj{òÆ .¤
+00000060   7E 2B 3B 99 0D 09 F3 60 00 51 AC 41              ~+;..ó`.Q¬A
+
+
+PS C:\Users\Citra Fanysa\Documents> Get-ChildItem encrypted*.gpg | Select-Object Name, Length
+
+Name             Length
+----             ------
+encrypted.gpg       108
+encrypted256.gpg    108
+

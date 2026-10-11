@@ -1,0 +1,138 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Citra Fanysa> ifkunesa-armor.gpg
+ifkunesa-armor.gpg : The term 'ifkunesa-armor.gpg' is not recognized as
+the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ ifkunesa-armor.gpg
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ifkunesa-armor.gpg:String)
+   [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa> gpg -k
+[keyboxd]
+---------
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+uid           [ unknown] Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid           [ultimate] Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+pub   ed25519 2026-10-11 [CG] [expires: 2030-01-07]
+      B68B6C73552480929A9AEC99E71EBC37D503B973
+uid           [ultimate] CitraFanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2030-01-07]
+      A5721A72E01DDF06FACA89B8C0393FA60796C25A
+sub   ed25519 2026-10-11 [S]
+      3E478E3AE886FEDE60B6476ACCAF22D0340D3062
+
+PS C:\Users\Citra Fanysa> gpg --import ifkunesa-armor.gpg
+gpg: can't open 'ifkunesa-armor.gpg': No such file or directory
+gpg: Total number processed: 0
+PS C:\Users\Citra Fanysa> gpg --show-keys ifkunesa-armor.gpg
+gpg: can't open 'ifkunesa-armor.gpg': No such file or directory
+PS C:\Users\Citra Fanysa> gpg --list-packets ifkunesa-armor.gpg
+gpg: can't open 'ifkunesa-armor.gpg'
+PS C:\Users\Citra Fanysa> gpg -k
+[keyboxd]
+---------
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+uid           [ unknown] Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid           [ultimate] Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+pub   ed25519 2026-10-11 [CG] [expires: 2030-01-07]
+      B68B6C73552480929A9AEC99E71EBC37D503B973
+uid           [ultimate] CitraFanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2030-01-07]
+      A5721A72E01DDF06FACA89B8C0393FA60796C25A
+sub   ed25519 2026-10-11 [S]
+      3E478E3AE886FEDE60B6476ACCAF22D0340D3062
+
+PS C:\Users\Citra Fanysa> gpg --edit-key
+gpg (GnuPG) 2.5.24; Copyright (C) 2026 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+usage: gpg [options] --edit-key user-id [commands]
+PS C:\Users\Citra Fanysa> expire
+expire : The term 'expire' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ expire
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (expire:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Citra Fanysa> gpg --delete-keys D0AB50499EF393DF2A38CD6A6837D5D0965E9CD8
+gpg (GnuPG) 2.5.24; Copyright (C) 2026 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+gpg: key "D0AB50499EF393DF2A38CD6A6837D5D0965E9CD8" not found: Not found
+gpg: D0AB50499EF393DF2A38CD6A6837D5D0965E9CD8: delete key failed: Not found
+PS C:\Users\Citra Fanysa>
+PS C:\Users\Citra Fanysa> gpg --sign-key ibnu.febry@live.com
+gpg: key "ibnu.febry@live.com" not found: No public key
+PS C:\Users\Citra Fanysa> gpg --lsign-key
+usage: gpg [options] --lsign-key user-id
+PS C:\Users\Citra Fanysa> gpg -k
+[keyboxd]
+---------
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      5D56B8512900168F04E0A6E45963A326A48C6CCC
+uid           [ unknown] Tabrizzi Aqlia <25031554008@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      8DE3C608234A62CE0FEC6FC8E736E57F6D5B40F1
+
+pub   ed25519 2026-10-11 [SC] [expires: 2029-10-10]
+      7A4C836AF8719F48F3EF4F5A795C52B2779D578E
+uid           [ultimate] Citra Fanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2029-10-10]
+      77D52D9372FD1F62357559AAE591F1C174B0227F
+
+pub   ed25519 2026-10-11 [CG] [expires: 2030-01-07]
+      B68B6C73552480929A9AEC99E71EBC37D503B973
+uid           [ultimate] CitraFanysa <25031554015@mhs.unesa.ac.id>
+sub   cv25519 2026-10-11 [E] [expires: 2030-01-07]
+      A5721A72E01DDF06FACA89B8C0393FA60796C25A
+sub   ed25519 2026-10-11 [S]
+      3E478E3AE886FEDE60B6476ACCAF22D0340D3062
+
+PS C:\Users\Citra Fanysa> gpg --sign-key
+usage: gpg [options] --sign-key user-id
+PS C:\Users\Citra Fanysa> gpg --verify doc.pdf.sig doc.pdf
+gpg: can't open 'doc.pdf.sig': No such file or directory
+gpg: verify signatures failed: No such file or directory
+PS C:\Users\Citra Fanysa> gpg --output doc-25031554015.pdf.sig --detach-sign doc.pdf
+gpg: can't open 'doc.pdf': No such file or directory
+gpg: signing failed: No such file or directory
+PS C:\Users\Citra Fanysa> cd $HOME\Downloads
+PS C:\Users\Citra Fanysa\Downloads> gpg --output doc-25031554008.pdf.sig --detach-sign doc.pdf
+gpg: can't open 'doc.pdf': No such file or directory
+gpg: signing failed: No such file or directory
+PS C:\Users\Citra Fanysa\Downloads> dir doc*
+PS C:\Users\Citra Fanysa\Downloads> gpg --verify doc-25031554015.pdf.sig doc.pdf
+gpg: can't open 'doc-25031554015.pdf.sig': No such file or directory
+gpg: verify signatures failed: No such file or directory
+PS C:\Users\Citra Fanysa\Downloads>
